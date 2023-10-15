@@ -1,0 +1,55 @@
+.box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    background-color: #2f4cad;
+    color: white;
+}
+
+.box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -320px;
+    width: 60%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+
+    /* Add animation properties */
+    animation: slide 3s forwards infinite;
+}
+
+/* Define the animation */
+@keyframes slide {
+    0% {
+        left: -320px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+        left: 310px;
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+/* Remove the :hover effect */
+.box:hover:before {
+    left: 310px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    position: relative;
+    color: black;
+    margin-top: 50vh;
+    font-family: monospace;
+    font-size: 30px;
+    /* text-shadow: 0 5px 5px #2f4cad; */
+}

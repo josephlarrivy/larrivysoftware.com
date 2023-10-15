@@ -1,0 +1,46 @@
+
+
+
+.name-input,
+.email-input {
+    width: 100%;
+    border: 1px solid black;
+    /* border-radius: 2px; */
+    color: black;
+    height: 30px;
+    font-size: large;
+}
+
+.message-input {
+    width: 100%;
+    border: 1px solid black;
+    /* border-radius: 2px; */
+    color: black;
+    height: 100px;
+    font-size: large;
+}
+
+/* Submit button */
+.submit-button {
+    background-color: #2f4cad;
+    color: white;
+    border: none;
+    /* border-radius: 4px; */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    align-items: center;
+    margin: auto;
+    font-family: monospace;
+    border-radius: 0px;
+}
+
+label, input {
+    font-family: monospace;
+}
+
+/* Submit button on hover */
+.submit-button:hover {
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); */
+}
