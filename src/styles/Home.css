@@ -29,13 +29,13 @@
 /* Define the animation */
 @keyframes slide {
     0% {
-        left: -320px;
-        background: rgba(255, 255, 255, 0.3);
+        left: -410px;
+        background: rgba(255, 255, 255, 0.7);
     }
 
     100% {
-        left: 310px;
-        background: rgba(255, 255, 255, 0.2);
+        left: 410px;
+        background: rgba(255, 255, 255, 0.0);
     }
 }
 
