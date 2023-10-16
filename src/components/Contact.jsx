@@ -43,7 +43,7 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit}>
 
       {/* <div id="name-container"> */}
-        <div className="first-name-container">
+        <div className="first-name-container" alt="joseph larrivy software duluth minnesota React React.js Node Express front en developer">
           <label htmlFor="fname">First Name: </label>
           <br></br>
           <input
@@ -57,7 +57,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <div className="last-name-container">
+      <div className="last-name-container" alt="joseph larrivy software duluth minnesota React React.js Node Express front en developer">
           <label htmlFor="lname">Last Name: </label>
           <br></br>
           <input
@@ -72,7 +72,7 @@ const ContactForm = () => {
         </div>
       {/* </div> */}
       
-      <div className="email-container">
+      <div className="email-container" alt="joseph larrivy software duluth minnesota React React.js Node Express front en developer">
         <label htmlFor="email">Email: </label>
         <br></br>
         <input
@@ -86,7 +86,7 @@ const ContactForm = () => {
         />
       </div>
 
-      <div className="message-container">
+      <div className="message-container" alt="joseph larrivy software duluth minnesota React React.js Node Express front en developer">
         <label htmlFor="message">Message: </label>
         <br></br>
         <textarea
