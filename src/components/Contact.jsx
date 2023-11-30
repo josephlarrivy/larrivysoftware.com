@@ -34,7 +34,7 @@ const ContactForm = () => {
 
   const handleSubmit = async (evt) => {
     evt.preventDefault();
-    emailjs.sendForm('service_yfh2nmo', 'template_8xoo1d', evt.target, 'dOwl-x9RcwhboytS1')
+    emailjs.sendForm('service_yfh2nmo', 'template_8xoo1dd', evt.target, 'dOwl-x9RcwhboytS1')
     setFormData(INITIAL_STATE);
     alert("Form submitted successfully. Thank you for your request.");
   }
