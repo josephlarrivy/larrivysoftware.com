@@ -142,7 +142,7 @@ const ContactForm = () => {
   const handleSubmit = async (evt) => {
     evt.preventDefault();
     try {
-      const response = await axios.post('https://private-email-sending-server-ed9119e08e0e.herokuapp.com/sendEmailLarrivy', {
+      const response = await axios.post('https://private-email-sending-server-ed9119e08e0e.herokuapp.com/sendEmailLarrivy/email/sendEmailLarrivy', {
         fname: formData.fname,
         lname: formData.lname,
         email: formData.email,
