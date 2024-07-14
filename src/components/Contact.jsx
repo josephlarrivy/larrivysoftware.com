@@ -107,6 +107,7 @@
 // export default ContactForm;
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import '../styles/Contact.css';
 
@@ -120,6 +121,8 @@ const ContactForm = () => {
   };
 
   const [formData, setFormData] = useState(INITIAL_STATE);
+
+  const navigateTo = useNavigate()
 
   const handleChange = evt => {
     const { name, value, type, checked } = evt.target;
@@ -152,6 +155,7 @@ const ContactForm = () => {
       console.log('Success:', response.data);
       setFormData(INITIAL_STATE);
       alert("Form submitted successfully. Thank you for your request.");
+      navigateTo('/')
     } catch (error) {
       console.error('Error:', error);
       alert("There was an error submitting the form. Please try again.");
